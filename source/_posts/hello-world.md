@@ -1,6 +1,9 @@
 ---
 title: Hello World
 description: Hello World Page
+category:
+- Develop
+- Test
 tags:
 - hexo
 - hello world
