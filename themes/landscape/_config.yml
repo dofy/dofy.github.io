@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  About: /about
   Archives: /archives
 rss: /atom.xml
 
@@ -28,7 +29,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-88258326-1
 favicon: /favicon.png
 twitter: dofy
 google_plus: +SevenYu
