@@ -1,6 +1,7 @@
 ---
 title: About Me
 layout: page
+comments: false
 p: /about/index
 ---
 
