@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dofy.github.io/about/index.html</loc>
+    
+    <lastmod>2017-12-01T09:21:47.917Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dofy.github.io/2017/12/01/hello-world/</loc>
     
     <lastmod>2017-12-01T08:48:15.906Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://dofy.github.io/2017/12/01/first-blog/</loc>
     
     <lastmod>2017-12-01T08:01:21.537Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dofy.github.io/about/index.html</loc>
-    
-    <lastmod>2017-12-01T06:41:13.072Z</lastmod>
     
   </url>
   
