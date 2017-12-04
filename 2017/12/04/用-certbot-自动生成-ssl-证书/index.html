@@ -13,26 +13,26 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>同步 git 分支 | Seven`s Blog</title>
+  <title>用 certbot 自动生成 ssl 证书 | Seven`s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="gitforksync" />
+  <meta name="keywords" content="certbotsslnginx" />
   
   
   
   
-  <meta name="description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# ">
-<meta name="keywords" content="git,fork,sync">
+  <meta name="description" content="安装 certbotLinux12sudo apt updatesudo apt install certbot Mac1brew install certbot 生成证书1sudo certbot --nginx 选择域名certbot 会根据你的 nginx 配置列出所有域名，你可以根据变化选择生成 ssl 证书的">
+<meta name="keywords" content="certbot,ssl,nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="同步 git 分支">
-<meta property="og:url" content="https://dofy.github.io/2017/12/04/同步-git-分支/index.html">
+<meta property="og:title" content="用 certbot 自动生成 ssl 证书">
+<meta property="og:url" content="https://dofy.github.io/2017/12/04/用-certbot-自动生成-ssl-证书/index.html">
 <meta property="og:site_name" content="Seven`s Blog">
-<meta property="og:description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
+<meta property="og:description" content="安装 certbotLinux12sudo apt updatesudo apt install certbot Mac1brew install certbot 生成证书1sudo certbot --nginx 选择域名certbot 会根据你的 nginx 配置列出所有域名，你可以根据变化选择生成 ssl 证书的域名，也可以直接回车，为所有服务器上所有域名生成证书。 12345678910S">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-04T03:51:46.367Z">
+<meta property="og:updated_time" content="2017-12-04T06:02:05.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="同步 git 分支">
-<meta name="twitter:description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
+<meta name="twitter:title" content="用 certbot 自动生成 ssl 证书">
+<meta name="twitter:description" content="安装 certbotLinux12sudo apt updatesudo apt install certbot Mac1brew install certbot 生成证书1sudo certbot --nginx 选择域名certbot 会根据你的 nginx 配置列出所有域名，你可以根据变化选择生成 ssl 证书的域名，也可以直接回车，为所有服务器上所有域名生成证书。 12345678910S">
 <meta name="twitter:creator" content="@dofy">
 <link rel="publisher" href="+SevenYu">
   
@@ -161,7 +161,7 @@ var themeMenus = {};
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-同步-git-分支" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-用-certbot-自动生成-ssl-证书" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -169,7 +169,7 @@ var themeMenus = {};
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      同步 git 分支
+      用 certbot 自动生成 ssl 证书
     </h1>
   
 
@@ -177,8 +177,8 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/12/04/同步-git-分支/" class="article-date">
-	  <time datetime="2017-12-04T03:03:12.000Z" itemprop="datePublished">十二月 4, 2017</time>
+	Posted on <a href="/2017/12/04/用-certbot-自动生成-ssl-证书/" class="article-date">
+	  <time datetime="2017-12-04T04:12:10.000Z" itemprop="datePublished">十二月 4, 2017</time>
 	</a>
 
       
@@ -189,11 +189,13 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="添加上游项目-git-地址"><a href="#添加上游项目-git-地址" class="headerlink" title="添加上游项目 git 地址"></a>添加上游项目 git 地址</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream &#123;upstream-git-url&#125;</span><br><span class="line"><span class="comment"># &#123;upstream-git-url&#125; 替换为项目原始仓库地址</span></span><br></pre></td></tr></table></figure>
-<h3 id="查看-git-信息"><a href="#查看-git-信息" class="headerlink" title="查看 git 信息"></a>查看 git 信息</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"><span class="comment"># 返回信息类似：</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (push)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (push)</span></span><br></pre></td></tr></table></figure>
-<h3 id="获取上游项目更新"><a href="#获取上游项目更新" class="headerlink" title="获取上游项目更新"></a>获取上游项目更新</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure>
-<h3 id="本地切换到主分支"><a href="#本地切换到主分支" class="headerlink" title="本地切换到主分支"></a>本地切换到主分支</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-<h3 id="合并上游项目代码到本地分支"><a href="#合并上游项目代码到本地分支" class="headerlink" title="合并上游项目代码到本地分支"></a>合并上游项目代码到本地分支</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure>
+        <h3 id="安装-certbot"><a href="#安装-certbot" class="headerlink" title="安装 certbot"></a>安装 certbot</h3><h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install certbot</span><br></pre></td></tr></table></figure>
+<h4 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install certbot</span><br></pre></td></tr></table></figure>
+<h3 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo certbot --nginx</span><br></pre></td></tr></table></figure>
+<h3 id="选择域名"><a href="#选择域名" class="headerlink" title="选择域名"></a>选择域名</h3><p>certbot 会根据你的 nginx 配置列出所有域名，你可以根据变化选择生成 ssl 证书的域名<br>，也可以直接回车，为所有服务器上所有域名生成证书。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Saving debug log to /var/log/letsencrypt/letsencrypt.log</span><br><span class="line">Plugins selected: Authenticator nginx, Installer nginx</span><br><span class="line"></span><br><span class="line">Which names would you like to activate HTTPS for?</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">1: your.domain.one</span><br><span class="line">2: your.domain.two</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">Select the appropriate numbers separated by commas and/or spaces, or leave input</span><br><span class="line">blank to select all options shown (Enter &apos;c&apos; to cancel):</span><br></pre></td></tr></table></figure>
+<p>如果证书已经存在，certbot 会让你选择是尝试重新安装还是续约：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">What would you like to do?</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">1: Attempt to reinstall this existing certificate</span><br><span class="line">2: Renew &amp; replace the cert (limit ~5 per 7 days)</span><br><span class="line">-------------------------------------------------------------------------------</span><br><span class="line">Select the appropriate number [1-2] then [enter] (press &apos;c&apos; to cancel):</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -204,7 +206,7 @@ var themeMenus = {};
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fork/">fork</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sync/">sync</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/certbot/">certbot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssl/">ssl</a></li></ul>
 
       
             
@@ -242,15 +244,11 @@ var themeMenus = {};
     
 <nav id="article-nav">
   
-    <a href="/2017/12/04/用-certbot-自动生成-ssl-证书/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          用 certbot 自动生成 ssl 证书
-        
-      </div>
-    </a>
   
+    <a href="/2017/12/04/同步-git-分支/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">同步 git 分支</div>
+    </a>
   
 </nav>
 
@@ -263,7 +261,7 @@ var themeMenus = {};
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加上游项目-git-地址"><span class="nav-number">1.</span> <span class="nav-text">添加上游项目 git 地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看-git-信息"><span class="nav-number">2.</span> <span class="nav-text">查看 git 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取上游项目更新"><span class="nav-number">3.</span> <span class="nav-text">获取上游项目更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地切换到主分支"><span class="nav-number">4.</span> <span class="nav-text">本地切换到主分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并上游项目代码到本地分支"><span class="nav-number">5.</span> <span class="nav-text">合并上游项目代码到本地分支</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-certbot"><span class="nav-number">1.</span> <span class="nav-text">安装 certbot</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Linux"><span class="nav-number">1.1.</span> <span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mac"><span class="nav-number">1.2.</span> <span class="nav-text">Mac</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成证书"><span class="nav-number">2.</span> <span class="nav-text">生成证书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择域名"><span class="nav-number">3.</span> <span class="nav-text">选择域名</span></a></li></ol>
     
     </div>
   </aside>
