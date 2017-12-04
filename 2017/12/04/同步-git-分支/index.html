@@ -21,18 +21,18 @@
   
   
   
-  <meta name="description" content="添加上游项目 git 地址 12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址  查看 git 信息 123456git remote -v# 返">
+  <meta name="description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# ">
 <meta name="keywords" content="git,fork,sync">
 <meta property="og:type" content="article">
 <meta property="og:title" content="同步 git 分支">
 <meta property="og:url" content="https://dofy.github.io/2017/12/04/同步-git-分支/index.html">
 <meta property="og:site_name" content="Seven`s Blog">
-<meta property="og:description" content="添加上游项目 git 地址 12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址  查看 git 信息 123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
+<meta property="og:description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-04T03:15:46.446Z">
+<meta property="og:updated_time" content="2017-12-04T03:51:46.367Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="同步 git 分支">
-<meta name="twitter:description" content="添加上游项目 git 地址 12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址  查看 git 信息 123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
+<meta name="twitter:description" content="添加上游项目 git 地址  12git remote add upstream &amp;#123;upstream-git-url&amp;#125;# &amp;#123;upstream-git-url&amp;#125; 替换为项目原始仓库地址 查看 git 信息  123456git remote -v# 返回信息类似：# origin  git@github.com:YOU/YOUR-PROJECT.git (fe">
 <meta name="twitter:creator" content="@dofy">
 <link rel="publisher" href="+SevenYu">
   
@@ -189,23 +189,11 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p>添加上游项目 git 地址</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream &#123;upstream-git-url&#125;</span><br><span class="line"><span class="comment"># &#123;upstream-git-url&#125; 替换为项目原始仓库地址</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看 git 信息</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"><span class="comment"># 返回信息类似：</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (push)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (push)</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取上游项目更新</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地切换到主分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>合并上游项目代码到本地分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+        <h3 id="添加上游项目-git-地址"><a href="#添加上游项目-git-地址" class="headerlink" title="添加上游项目 git 地址"></a>添加上游项目 git 地址</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream &#123;upstream-git-url&#125;</span><br><span class="line"><span class="comment"># &#123;upstream-git-url&#125; 替换为项目原始仓库地址</span></span><br></pre></td></tr></table></figure>
+<h3 id="查看-git-信息"><a href="#查看-git-信息" class="headerlink" title="查看 git 信息"></a>查看 git 信息</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"><span class="comment"># 返回信息类似：</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># origin  git@github.com:YOU/YOUR-PROJECT.git (push)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (fetch)</span></span><br><span class="line"><span class="comment"># upstream  git@github.com:SOMEONE/UPSTREAM-PROJECT.git (push)</span></span><br></pre></td></tr></table></figure>
+<h3 id="获取上游项目更新"><a href="#获取上游项目更新" class="headerlink" title="获取上游项目更新"></a>获取上游项目更新</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br></pre></td></tr></table></figure>
+<h3 id="本地切换到主分支"><a href="#本地切换到主分支" class="headerlink" title="本地切换到主分支"></a>本地切换到主分支</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<h3 id="合并上游项目代码到本地分支"><a href="#合并上游项目代码到本地分支" class="headerlink" title="合并上游项目代码到本地分支"></a>合并上游项目代码到本地分支</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -261,7 +249,7 @@ var themeMenus = {};
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav">无</ol>
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加上游项目-git-地址"><span class="nav-number">1.</span> <span class="nav-text">添加上游项目 git 地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看-git-信息"><span class="nav-number">2.</span> <span class="nav-text">查看 git 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取上游项目更新"><span class="nav-number">3.</span> <span class="nav-text">获取上游项目更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地切换到主分支"><span class="nav-number">4.</span> <span class="nav-text">本地切换到主分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并上游项目代码到本地分支"><span class="nav-number">5.</span> <span class="nav-text">合并上游项目代码到本地分支</span></a></li></ol>
     
     </div>
   </aside>
