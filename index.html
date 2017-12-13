@@ -159,6 +159,68 @@ var themeMenus = {};
         
           <section id="main">
   
+    <article id="post-macOS-下安装-vim-最新版"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/13/macOS-下安装-vim-最新版/">macOS 下安装 vim 最新版</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/13/macOS-下安装-vim-最新版/" class="article-date">
+	  <time datetime="2017-12-13T06:01:07.000Z" itemprop="datePublished">十二月 13, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="安装-Homebrew"><a href="#安装-Homebrew" class="headerlink" title="安装 Homebrew"></a>安装 Homebrew</h3><h4 id="关于-Homebrew"><a href="#关于-Homebrew" class="headerlink" title="关于 Homebrew"></a>关于 Homebrew</h4><p>Homebrew 是 macOS 下最常用、最强大的软件包管理器，每一台 macOS 系统都应该安装一份。</p>
+<ul>
+<li><a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew 官方网站 - https://brew.sh/</a></li>
+<li><a href="https://github.com/Homebrew/brew/" target="_blank" rel="noopener">GitHub 项目地址 - https://github.com/SpaceVim/SpaceVim</a></li>
+</ul>
+<h4 id="安装-Homebrew-1"><a href="#安装-Homebrew-1" class="headerlink" title="安装 Homebrew"></a>安装 Homebrew</h4><p><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+<h3 id="安装-vim"><a href="#安装-vim" class="headerlink" title="安装 vim"></a>安装 vim</h3><h4 id="安装前"><a href="#安装前" class="headerlink" title="安装前"></a>安装前</h4><p>你可以先用 <code>brew info vim</code> 命令查看一下 <code>vim</code> 安装参数，大概会得到如下结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">vim: stable 8.0.1350 (bottled), HEAD</span><br><span class="line">Vi &apos;workalike&apos; with many additional features</span><br><span class="line">https://vim.sourceforge.io/</span><br><span class="line">Conflicts with:</span><br><span class="line">ex-vi (because vim and ex-vi both install bin/ex and bin/view)</span><br><span class="line">Not installed</span><br><span class="line">From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/vim.rb</span><br><span class="line">==&gt; Dependencies</span><br><span class="line">Optional: lua ✘, luajit ✔, gettext ✔</span><br><span class="line">==&gt; Requirements</span><br><span class="line">Required: ruby &gt;= 1.8 ✔, perl &gt;= 5.3 ✔</span><br><span class="line">Recommended: python ✔</span><br><span class="line">Optional: python3 ✔</span><br><span class="line">==&gt; Options</span><br><span class="line">--with-client-server</span><br><span class="line">  Enable client/server mode</span><br><span class="line">--with-custom-perl</span><br><span class="line">  Build with a custom Perl instead of the Homebrew version.</span><br><span class="line">--with-custom-python</span><br><span class="line">  Build with a custom Python 2 instead of the Homebrew version.</span><br><span class="line">--with-custom-ruby</span><br><span class="line">  Build with a custom Ruby instead of the Homebrew version.</span><br><span class="line">--with-gettext</span><br><span class="line">  Build vim with National Language Support (translated messages, keymaps)</span><br><span class="line">--with-lua</span><br><span class="line">  Build vim with lua support</span><br><span class="line">--with-luajit</span><br><span class="line">  Build with luajit support</span><br><span class="line">--with-override-system-vi</span><br><span class="line">  Override system vi</span><br><span class="line">--with-python3</span><br><span class="line">  Build vim with python3 instead of python[2] support</span><br><span class="line">--with-tcl</span><br><span class="line">  Build vim with tcl support</span><br><span class="line">--without-perl</span><br><span class="line">  Build vim without perl support</span><br><span class="line">--without-python</span><br><span class="line">  Build vim without python support</span><br><span class="line">--without-ruby</span><br><span class="line">  Build vim without ruby support</span><br><span class="line">--HEAD</span><br><span class="line">  Install HEAD version</span><br></pre></td></tr></table></figure>
+<h4 id="根据你的需求安装-vim"><a href="#根据你的需求安装-vim" class="headerlink" title="根据你的需求安装 vim"></a>根据你的需求安装 vim</h4><p>以我的需求为例：</p>
+<ul>
+<li>我需要覆盖 macOS 系统自带的 vi 编辑器</li>
+<li>我要安装 <a href="https://github.com/SpaceVim/SpaceVim" target="_blank" rel="noopener">SpaceVim</a>（一套非常强大的 <code>vim</code> 配置方案），而 <code>SpaceVim</code> 需要依赖 <code>lua</code> 和 <code>python2/3</code></li>
+</ul>
+<p>所以，根据我的需求，我安装 <code>vim</code> 的命令是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install vim --with-override-system-vi --with-lua --with-python3</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Develop/">Develop</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-用-certbot-自动生成-ssl-证书"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -392,6 +454,18 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2017/12/13/macOS-下安装-vim-最新版/">macOS 下安装 vim 最新版</a></h6>
+              <span>十二月 13, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2017/12/04/用-certbot-自动生成-ssl-证书/">用 certbot 自动生成 ssl 证书</a></h6>
               <span>十二月 4, 2017</span>
             </div>
@@ -419,7 +493,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Develop/">Develop</a><span class="category-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Develop/">Develop</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -429,7 +503,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/certbot/">certbot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fork/">fork</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sync/">sync</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/certbot/">certbot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fork/">fork</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/">macOS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssl/">ssl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sync/">sync</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -439,7 +513,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/certbot/" style="font-size: 10px;">certbot</a> <a href="/tags/fork/" style="font-size: 10px;">fork</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/sync/" style="font-size: 10px;">sync</a>
+      <a href="/tags/certbot/" style="font-size: 10px;">certbot</a> <a href="/tags/fork/" style="font-size: 10px;">fork</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/macOS/" style="font-size: 10px;">macOS</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/sync/" style="font-size: 10px;">sync</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -449,7 +523,7 @@ var themeMenus = {};
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
